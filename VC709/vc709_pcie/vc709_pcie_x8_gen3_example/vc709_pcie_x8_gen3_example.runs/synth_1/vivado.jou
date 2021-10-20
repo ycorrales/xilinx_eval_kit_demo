@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:22:08 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Mon May 11 23:57:47 2015
+# Process ID: 18392
+# Log file: c:/vc709_pcie/vc709_pcie_x8_gen3_example/vc709_pcie_x8_gen3_example.runs/synth_1/xilinx_pcie_3_0_7vx_ep.vds
+# Journal file: c:/vc709_pcie/vc709_pcie_x8_gen3_example/vc709_pcie_x8_gen3_example.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source xilinx_pcie_3_0_7vx_ep.tcl -notrace
