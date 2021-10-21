@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="vc709_pcie_x8_gen3_synth_1" LaunchDir="C:/vc709_pcie/vc709_pcie.runs/vc709_pcie_x8_gen3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-</Runs>
-
