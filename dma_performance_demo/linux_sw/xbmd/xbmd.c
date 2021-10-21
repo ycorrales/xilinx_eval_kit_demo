@@ -134,7 +134,7 @@ typedef struct bmdwrite {
 // Prototypes
 //-----------------------------------------------------------------------------
 
-void  XPCIe_IRQHandler (int irq, void *dev_id, struct pt_regs *regs);
+irqreturn_t XPCIe_IRQHandler (int irq, void *dev_id);
 u32   XPCIe_ReadReg (u32 dw_offset);
 void  XPCIe_WriteReg (u32 dw_offset, u32 val);
 void  XPCIe_InitCard (void);
@@ -244,8 +244,7 @@ ssize_t XPCIe_Read(struct file *filp, char *buf, size_t count, loff_t *f_pos)
 // Description: This routine is invoked from user space to configure the 
 //              running driver. 
 //
-// Arguments: inode : 
-//            filp  : File pointer to opened device.
+// Arguments: filp  : File pointer to opened device.
 //            cmd   : Ioctl command to execute.
 //            arg   : Argument to Ioctl command.
 //
@@ -255,8 +254,7 @@ ssize_t XPCIe_Read(struct file *filp, char *buf, size_t count, loff_t *f_pos)
 // Date      Who  Description
 //
 //---------------------------------------------------------------------------
-int XPCIe_Ioctl(struct inode *inode, 
-                struct file *filp, 
+long XPCIe_Ioctl(struct file *filp, 
                 unsigned int cmd,
                 unsigned long arg)
 {
@@ -427,7 +425,7 @@ int XPCIe_Ioctl(struct inode *inode,
 struct file_operations XPCIe_Intf = {
     read:       XPCIe_Read,
     write:      XPCIe_Write,
-    ioctl:      XPCIe_Ioctl,
+    unlocked_ioctl:      XPCIe_Ioctl,
     open:       XPCIe_Open,
     release:    XPCIe_Release,
 };
@@ -438,7 +436,7 @@ static int XPCIe_init(void)
   // Find the Xilinx EP device.  The device is found by matching device and vendor ID's which is defined
   // at the top of this file.  Be default, the driver will look for 10EE & 0007.  If the core is generated 
   // with other settings, the defines at the top must be changed or the driver will not load
-  gDev = pci_find_device (PCI_VENDOR_ID_XILINX, PCI_DEVICE_ID_XILINX_PCIE, gDev);
+  gDev = pci_get_device (PCI_VENDOR_ID_XILINX, PCI_DEVICE_ID_XILINX_PCIE, gDev);
   if (NULL == gDev) {
 
     // If a matching device or vendor ID is not found, return failure and update kernel log. 
@@ -487,13 +485,12 @@ static int XPCIe_init(void)
   //---START: Initialize Hardware
 
   // Check the memory region to see if it is in use
-  if (0 > check_mem_region(gBaseHdwr, XBMD_REGISTER_SIZE)) {
+  // Try to gain exclusive control of memory for demo hardware.
+  if (! request_mem_region(gBaseHdwr, XBMD_REGISTER_SIZE, "3GIO_Demo_Drv")) {
     printk(KERN_WARNING"%s: Init: Memory in use.\n", gDrvrName);
     return (CRIT_ERR);
   }
 
-  // Try to gain exclusive control of memory for demo hardware.
-  request_mem_region(gBaseHdwr, XBMD_REGISTER_SIZE, "3GIO_Demo_Drv");
   // Update flags
   gStatFlags = gStatFlags | HAVE_REGION;
 
@@ -504,7 +501,7 @@ static int XPCIe_init(void)
   // respectively.  In older Fedora core installations, the request arguments may need to be reverted back.
   // SA_SHIRQ | SA_SAMPLE_RANDOM
   printk(KERN_INFO"%s: ISR Setup..\n", gDrvrName);
-  if (0 > request_irq(gIrq, &XPCIe_IRQHandler, IRQF_SHARED | IRQF_SAMPLE_RANDOM, gDrvrName, gDev)) {
+  if (0 > request_irq(gIrq, &XPCIe_IRQHandler, IRQF_SHARED, gDrvrName, gDev)) {
     printk(KERN_WARNING"%s: Init: Unable to allocate IRQ",gDrvrName);
     return (CRIT_ERR);
   }
@@ -650,7 +647,7 @@ module_init(XPCIe_init);
 module_exit(XPCIe_exit);
 
 
-void XPCIe_IRQHandler(int irq, void *dev_id, struct pt_regs *regs)
+irqreturn_t XPCIe_IRQHandler(int irq, void *dev_id)
 {
   u32 i, regx;
 
@@ -662,6 +659,8 @@ void XPCIe_IRQHandler(int irq, void *dev_id, struct pt_regs *regs)
   }
 
   printk(KERN_WARNING"%s Interrupt Handler End ..\n", gDrvrName);
+  
+  return IRQ_RETVAL(1);
 }
 
 u32 XPCIe_ReadReg (u32 dw_offset)

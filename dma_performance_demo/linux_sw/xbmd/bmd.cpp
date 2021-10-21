@@ -60,6 +60,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
+#include <unistd.h>
 
 #include "xbmd.h"                // Include XBMD driver header which defines SUCCESS(0) and FAILURE(-1)
 #include "MersenneTwister.h"     // Include random number generator header file.  Used for random mode
