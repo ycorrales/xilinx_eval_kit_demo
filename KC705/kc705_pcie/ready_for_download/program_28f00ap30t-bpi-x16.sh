@@ -1,13 +1,13 @@
 #! /usr/bin/bash
 
 (
-  VIV_PATH="~/Software/Xilinx/Vivado/2020.2/settings.sh"
+  VIV_PATH="/home/maps/Software/Xilinx/Vivado/2020.2/settings64.sh"
   [[ -f "${VIV_PATH}" ]] && source "${VIV_PATH}"
 
-  vivado  -mode batch -source program_28f00ap30t-bpi-x16.tcl
+  vivado -notrace -nojournal -nolog  -mode batch -source program_28f00ap30t-bpi-x16.tcl
 
-  [[ -f "*isWriteableTest*.tmp" ]] && rm -rf "*isWriteableTest*.tmp"
-  [[ -f "vivado_*.backup.jou" ]]   && rm -rf "vivado_*.backup.jou"
-  [[ -f "vivado_*.backup.log" ]]   && rm -rf "vivado_*.backup.log"
-  [[ -f "vivado_*.str" ]] && rm -rf "vivado_*.str"
+  FILE_LIST=('webtalk*')
+  for f in ${FILE_LIST[@]}; do
+    [[ ! -z $(ls "$f" 2> /dev/null) ]] && rm -rfv "$f"
+  done
 )
