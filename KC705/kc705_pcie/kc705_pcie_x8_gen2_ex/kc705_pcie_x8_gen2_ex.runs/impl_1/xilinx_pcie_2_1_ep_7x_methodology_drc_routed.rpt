@@ -1,0 +1,52 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Thu Oct 21 19:48:42 2021
+| Host         : localhost.localdomain running 64-bit unknown
+| Command      : report_methodology -file xilinx_pcie_2_1_ep_7x_methodology_drc_routed.rpt -pb xilinx_pcie_2_1_ep_7x_methodology_drc_routed.pb -rpx xilinx_pcie_2_1_ep_7x_methodology_drc_routed.rpx
+| Design       : xilinx_pcie_2_1_ep_7x
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 3
++----------+----------+------------------------------+------------+
+| Rule     | Severity | Description                  | Violations |
++----------+----------+------------------------------+------------+
+| AVAL-324 | Warning  | Hard_blocks_needs_LOCs       | 2          |
+| LUTAR-1  | Warning  | LUT drives async reset alert | 1          |
++----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+AVAL-324#1 Warning
+Hard_blocks_needs_LOCs  
+The hard block GTXE2_COMMON cell kc705_pcie_x8_gen2_support_i/kc705_pcie_x8_gen2_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_wrapper_i/gtx_common.gtxe2_common_i is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing. Please set a valid LOC for this block to avoid these problem.
+Related violations: <none>
+
+AVAL-324#2 Warning
+Hard_blocks_needs_LOCs  
+The hard block GTXE2_COMMON cell kc705_pcie_x8_gen2_support_i/kc705_pcie_x8_gen2_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[4].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_wrapper_i/gtx_common.gtxe2_common_i is missing a valid LOC constraint for placement assignment, normally supplied by IP generation or manually assigned using the LOC property. Unguided placement of this block may cause problems in routing. Please set a valid LOC for this block to avoid these problem.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell kc705_pcie_x8_gen2_support_i/kc705_pcie_x8_gen2_i/inst/inst/user_reset_out_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) kc705_pcie_x8_gen2_support_i/kc705_pcie_x8_gen2_i/inst/inst/user_reset_int_reg/PRE
+kc705_pcie_x8_gen2_support_i/kc705_pcie_x8_gen2_i/inst/inst/user_reset_out_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+
