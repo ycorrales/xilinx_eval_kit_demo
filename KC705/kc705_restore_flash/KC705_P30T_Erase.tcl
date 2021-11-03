@@ -1,5 +1,5 @@
-open_hw
-connect_hw_server -host localhost -port 60001 -url localhost:3121
+open_hw_manager
+connect_hw_server -url localhost:3121
 current_hw_target [get_hw_targets */xilinx_tcf/Digilent/*]
 set_property PARAM.FREQUENCY 30000000 [get_hw_targets */xilinx_tcf/Digilent/*]
 open_hw_target
@@ -20,4 +20,5 @@ set_property PROGRAM.CFG_PROGRAM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [ge
 set_property PROGRAM.VERIFY  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
 if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
 program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
-disconnect_hw_server localhost
+disconnect_hw_server localhost:3121
+close_hw_manager

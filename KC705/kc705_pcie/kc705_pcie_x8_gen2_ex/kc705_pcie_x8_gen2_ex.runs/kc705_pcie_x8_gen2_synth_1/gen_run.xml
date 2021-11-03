@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="kc705_pcie_x8_gen2_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1634866690">
-  <File Type="VDS-TIMING-PB" Name="kc705_pcie_x8_gen2_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="kc705_pcie_x8_gen2_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="kc705_pcie_x8_gen2.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="kc705_pcie_x8_gen2_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="kc705_pcie_x8_gen2_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="kc705_pcie_x8_gen2_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="kc705_pcie_x8_gen2.vds"/>
   <File Type="REPORTS-TCL" Name="kc705_pcie_x8_gen2_reports.tcl"/>
   <File Type="PA-TCL" Name="kc705_pcie_x8_gen2.tcl"/>
+  <File Type="RDS-DCP" Name="kc705_pcie_x8_gen2.dcp"/>
+  <File Type="RDS-RDS" Name="kc705_pcie_x8_gen2.vds"/>
+  <File Type="RDS-UTIL" Name="kc705_pcie_x8_gen2_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="kc705_pcie_x8_gen2_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/kc705_pcie_x8_gen2">
     <File Path="$PSRCDIR/sources_1/ip/kc705_pcie_x8_gen2/kc705_pcie_x8_gen2.xci">
       <FileInfo>
@@ -46,9 +43,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

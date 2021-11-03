@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date                      : Thu Oct 21 19:48:05 2021
+| Date                      : Wed Nov  3 15:03:14 2021
 | Host                      : localhost.localdomain running 64-bit unknown
 | Command                   : report_io -file xilinx_pcie_2_1_ep_7x_io_placed.rpt
 | Design                    : xilinx_pcie_2_1_ep_7x

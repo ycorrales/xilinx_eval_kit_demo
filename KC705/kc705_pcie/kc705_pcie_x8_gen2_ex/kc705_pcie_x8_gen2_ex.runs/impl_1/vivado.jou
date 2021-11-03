@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Oct 21 19:47:24 2021
-# Process ID: 88208
+# Start of session at: Wed Nov  3 15:02:33 2021
+# Process ID: 17256
 # Current directory: /home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/kc705_pcie_x8_gen2_ex.runs/impl_1
 # Command line: vivado -log xilinx_pcie_2_1_ep_7x.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source xilinx_pcie_2_1_ep_7x.tcl -notrace
 # Log file: /home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/kc705_pcie_x8_gen2_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.vdi

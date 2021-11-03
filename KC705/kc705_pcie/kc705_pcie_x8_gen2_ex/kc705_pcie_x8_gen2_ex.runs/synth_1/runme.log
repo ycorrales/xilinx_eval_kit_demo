@@ -17,9 +17,9 @@ INFO: [Common 17-1540] The version limit for your license is '2021.01' and has e
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 88043
+INFO: [Synth 8-7075] Helper process launched with PID 17076
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2401.766 ; gain = 0.000 ; free physical = 119404 ; free virtual = 127524
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2400.762 ; gain = 0.000 ; free physical = 121146 ; free virtual = 128130
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'xilinx_pcie_2_1_ep_7x' [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/imports/xilinx_pcie_2_1_ep_7x.v:60]
 	Parameter PL_FAST_TRAIN bound to: FALSE - type: string 
@@ -151,8 +151,8 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/home/maps/Software/Xilin
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (6#1) [/home/maps/Software/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
 INFO: [Synth 8-6155] done synthesizing module 'kc705_pcie_x8_gen2_pipe_clock' (7#1) [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/imports/kc705_pcie_x8_gen2_pipe_clock.v:67]
-INFO: [Synth 8-6157] synthesizing module 'kc705_pcie_x8_gen2' [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/kc705_pcie_x8_gen2_ex.runs/synth_1/.Xil/Vivado-88026-localhost.localdomain/realtime/kc705_pcie_x8_gen2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'kc705_pcie_x8_gen2' (8#1) [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/kc705_pcie_x8_gen2_ex.runs/synth_1/.Xil/Vivado-88026-localhost.localdomain/realtime/kc705_pcie_x8_gen2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'kc705_pcie_x8_gen2' [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/kc705_pcie_x8_gen2_ex.runs/synth_1/.Xil/Vivado-17056-localhost.localdomain/realtime/kc705_pcie_x8_gen2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kc705_pcie_x8_gen2' (8#1) [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/kc705_pcie_x8_gen2_ex.runs/synth_1/.Xil/Vivado-17056-localhost.localdomain/realtime/kc705_pcie_x8_gen2_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'kc705_pcie_x8_gen2_support' (9#1) [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/imports/kc705_pcie_x8_gen2_support.v:61]
 INFO: [Synth 8-6157] synthesizing module 'pcie_app_7x' [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/imports/pcie_app_7x.v:65]
 	Parameter C_DATA_WIDTH bound to: 128 - type: integer 
@@ -392,18 +392,18 @@ INFO: [Synth 8-6155] done synthesizing module 'PIO' (17#1) [/home/maps/ycorrales
 INFO: [Synth 8-6155] done synthesizing module 'pcie_app_7x' (18#1) [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/imports/pcie_app_7x.v:65]
 INFO: [Synth 8-6155] done synthesizing module 'xilinx_pcie_2_1_ep_7x' (19#1) [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/imports/xilinx_pcie_2_1_ep_7x.v:60]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2401.766 ; gain = 0.000 ; free physical = 119955 ; free virtual = 128077
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2400.762 ; gain = 0.000 ; free physical = 121797 ; free virtual = 128785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2413.641 ; gain = 11.875 ; free physical = 120011 ; free virtual = 128132
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2412.637 ; gain = 11.875 ; free physical = 121820 ; free virtual = 128808
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2413.641 ; gain = 11.875 ; free physical = 120011 ; free virtual = 128132
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2412.637 ; gain = 11.875 ; free physical = 121820 ; free virtual = 128808
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2423.547 ; gain = 0.000 ; free physical = 120003 ; free virtual = 128124
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2422.543 ; gain = 0.000 ; free physical = 121812 ; free virtual = 128799
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'kc705_pcie_x8_gen2_support_i/pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -414,33 +414,33 @@ Initializing timing engine
 Parsing XDC File [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/kc705_pcie_x8_gen2_ex.gen/sources_1/ip/kc705_pcie_x8_gen2/kc705_pcie_x8_gen2/kc705_pcie_x8_gen2_in_context.xdc] for cell 'kc705_pcie_x8_gen2_support_i/kc705_pcie_x8_gen2_i'
 Finished Parsing XDC File [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/kc705_pcie_x8_gen2_ex.gen/sources_1/ip/kc705_pcie_x8_gen2/kc705_pcie_x8_gen2/kc705_pcie_x8_gen2_in_context.xdc] for cell 'kc705_pcie_x8_gen2_support_i/kc705_pcie_x8_gen2_i'
 Parsing XDC File [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/imports/xilinx_pcie_7x_ep_x8g2_KC705_REVC.xdc]
-INFO: [Timing 38-2] Deriving generated clocks [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/imports/xilinx_pcie_7x_ep_x8g2_KC705_REVC.xdc:91]
+INFO: [Timing 38-2] Deriving generated clocks [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/imports/xilinx_pcie_7x_ep_x8g2_KC705_REVC.xdc:92]
 Finished Parsing XDC File [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/imports/xilinx_pcie_7x_ep_x8g2_KC705_REVC.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/imports/xilinx_pcie_7x_ep_x8g2_KC705_REVC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xilinx_pcie_2_1_ep_7x_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/xilinx_pcie_2_1_ep_7x_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2552.391 ; gain = 0.000 ; free physical = 119885 ; free virtual = 128006
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2553.387 ; gain = 0.000 ; free physical = 121639 ; free virtual = 128637
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2552.391 ; gain = 0.000 ; free physical = 119885 ; free virtual = 128006
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2553.387 ; gain = 0.000 ; free physical = 121639 ; free virtual = 128637
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119980 ; free virtual = 128102
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121775 ; free virtual = 128772
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119980 ; free virtual = 128102
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121775 ; free virtual = 128772
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for kc705_pcie_x8_gen2_support_i/kc705_pcie_x8_gen2_i. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119980 ; free virtual = 128101
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121774 ; free virtual = 128772
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'wr_mem_state_reg' in module 'PIO_EP_MEM_ACCESS'
 INFO: [Synth 8-802] inferred FSM for state register 'pio_rx_sm_128.state_reg' in module 'PIO_RX_ENGINE'
@@ -466,7 +466,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'wr_mem_state_reg' using en
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'pio_rx_sm_128.state_reg' using encoding 'sequential' in module 'PIO_RX_ENGINE'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119971 ; free virtual = 128094
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121766 ; free virtual = 128765
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -523,25 +523,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119959 ; free virtual = 128085
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121753 ; free virtual = 128756
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119838 ; free virtual = 127965
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121627 ; free virtual = 128637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119834 ; free virtual = 127960
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121620 ; free virtual = 128630
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119834 ; free virtual = 127960
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121619 ; free virtual = 128629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -559,37 +559,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119834 ; free virtual = 127960
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121619 ; free virtual = 128629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119834 ; free virtual = 127960
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121619 ; free virtual = 128629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119834 ; free virtual = 127960
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121619 ; free virtual = 128629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119834 ; free virtual = 127960
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121619 ; free virtual = 128629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119834 ; free virtual = 127960
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121619 ; free virtual = 128629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119834 ; free virtual = 127960
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121619 ; free virtual = 128629
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -625,26 +625,26 @@ Report Cell Usage:
 |17    |OBUF               |    20|
 +------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119834 ; free virtual = 127960
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121619 ; free virtual = 128629
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2552.391 ; gain = 11.875 ; free physical = 119882 ; free virtual = 128009
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2552.391 ; gain = 150.625 ; free physical = 119882 ; free virtual = 128009
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2553.387 ; gain = 11.875 ; free physical = 121669 ; free virtual = 128679
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2553.387 ; gain = 152.625 ; free physical = 121670 ; free virtual = 128679
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2552.391 ; gain = 0.000 ; free physical = 119974 ; free virtual = 128100
+Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2553.387 ; gain = 0.000 ; free physical = 121759 ; free virtual = 128769
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'kc705_pcie_x8_gen2_support_i/pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2569.305 ; gain = 0.000 ; free physical = 119914 ; free virtual = 128040
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2568.332 ; gain = 0.000 ; free physical = 121699 ; free virtual = 128709
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 62 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2569.305 ; gain = 175.543 ; free physical = 119974 ; free virtual = 128101
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2568.332 ; gain = 175.574 ; free physical = 121756 ; free virtual = 128765
 INFO: [Common 17-1381] The checkpoint '/home/maps/ycorrales/xilinx_eval_kit_demo/KC705/kc705_pcie/kc705_pcie_x8_gen2_ex/kc705_pcie_x8_gen2_ex.runs/synth_1/xilinx_pcie_2_1_ep_7x.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file xilinx_pcie_2_1_ep_7x_utilization_synth.rpt -pb xilinx_pcie_2_1_ep_7x_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 21 19:47:13 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  3 15:02:22 2021...
