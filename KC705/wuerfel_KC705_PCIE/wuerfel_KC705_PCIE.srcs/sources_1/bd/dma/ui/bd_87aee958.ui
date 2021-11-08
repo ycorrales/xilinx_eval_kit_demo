@@ -1,0 +1,46 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.658997",
+   "Default View_TopLeft":"-147,-273",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port push_buttons_5bits -pg 1 -lvl 5 -x 1380 -y 390 -defaultsOSRD
+preplace port pci_express_x8 -pg 1 -lvl 5 -x 1380 -y 470 -defaultsOSRD
+preplace port ddr3_sdram -pg 1 -lvl 5 -x 1380 -y 150 -defaultsOSRD
+preplace port sys_diff_clock -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace port pcie_refclk -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace port pcie_perstn -pg 1 -lvl 0 -x 0 -y 530 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -x 1210 -y 390 -defaultsOSRD
+preplace inst xdma_0 -pg 1 -lvl 2 -x 520 -y 520 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 4 -x 1210 -y 200 -defaultsOSRD
+preplace inst util_ds_buf -pg 1 -lvl 1 -x 170 -y 460 -defaultsOSRD
+preplace inst xdma_0_axi_periph -pg 1 -lvl 3 -x 890 -y 160 -defaultsOSRD
+preplace inst rst_mig_7series_0_200M -pg 1 -lvl 2 -x 520 -y 200 -defaultsOSRD
+preplace netloc pcie_perstn_1 1 0 2 NJ 530 NJ
+preplace netloc util_ds_buf_IBUF_OUT 1 1 1 320J 450n
+preplace netloc xdma_0_axi_aclk 1 2 2 710 390 NJ
+preplace netloc xdma_0_axi_aresetn 1 2 2 730 410 NJ
+preplace netloc mig_7series_0_ui_clk 1 1 4 320 300 700 310 NJ 310 1350
+preplace netloc mig_7series_0_mmcm_locked 1 1 4 310 10 NJ 10 NJ 10 1360
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 1 4 330 20 NJ 20 NJ 20 1350
+preplace netloc rst_mig_7series_0_200M_peripheral_aresetn 1 2 2 720 300 1060
+preplace netloc reset_1 1 0 4 NJ 310 320J 320 NJ 320 1050J
+preplace netloc axi_gpio_0_GPIO 1 4 1 NJ 390
+preplace netloc xdma_0_pcie_mgt 1 2 3 NJ 470 NJ 470 NJ
+preplace netloc xdma_0_M_AXI 1 2 1 690 80n
+preplace netloc pcie_refclk_1 1 0 1 NJ 460
+preplace netloc sys_diff_clock_1 1 0 4 NJ 330 NJ 330 NJ 330 1040J
+preplace netloc mig_7series_0_DDR3 1 4 1 NJ 150
+preplace netloc xdma_0_axi_periph_M00_AXI 1 3 1 1030 150n
+preplace netloc xdma_0_axi_periph_M01_AXI 1 3 1 N 170
+levelinfo -pg 1 0 170 520 890 1210 1380
+pagesize -pg 1 -db -bbox -sgen -150 0 1560 650
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_board_cnt":"3",
+   "da_xdma_cnt":"2"
+}
